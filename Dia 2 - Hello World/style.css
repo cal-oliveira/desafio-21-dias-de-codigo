@@ -1,12 +1,23 @@
-body {
-    background-color: #726c81;
+#body {
+    background-color: #202024;
     font-family: 'Roboto', sans-serif;
 }
 
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+h1 { 
+    font-size: 60px;
+    color: #202024;
+}
+
 #central {
-    background-color: #9ddbca;
+    background-color: #00875F;
     position: absolute;
-    height: 500px;
+    height: 350px;
     width: 800px;
     top: 50%;
     left: 50%;
@@ -15,4 +26,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#central:hover {
+    background-color: #04D361;
 }
