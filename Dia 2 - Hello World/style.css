@@ -1,6 +1,7 @@
 #body {
     background-color: #202024;
     font-family: 'Roboto', sans-serif;
+    min-width: 1400px;
 }
 
 #central {
@@ -22,6 +23,15 @@
     transition: 0.2s;
 }
 
+#btn {
+    display: block;
+}
+
+#flag {
+    position: absolute;
+    right: -20%;
+}
+
 button {
     cursor: pointer;
     background: none;
@@ -31,6 +41,11 @@ button {
 h1 { 
     font-size: 60px;
     color: #202024;
+}
+
+img {
+    height: 100px;
+    border-radius: 50%;
 }
 
 footer {
