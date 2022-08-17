@@ -3,17 +3,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-button {
-    cursor: pointer;
-    background: none;
-    border: none;
-}
-
-h1 { 
-    font-size: 60px;
-    color: #202024;
-}
-
 #central {
     background-color: #00875F;
     position: absolute;
@@ -30,4 +19,34 @@ h1 {
 
 #central:hover {
     background-color: #04D361;
+    transition: 0.2s;
 }
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+h1 { 
+    font-size: 60px;
+    color: #202024;
+}
+
+footer {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+a {
+    text-decoration: none;
+    color: #7C7C8A;
+}
+
+a:hover {
+    color: #C4C4CC;
+    transition: 0.2s;
+}
+

@@ -12,7 +12,6 @@ function change(){
    if(h1.textContent === 'Olá, mundo!'){
     h1.innerText = 'Hello World!'
    }
-    
 
 }
 
