@@ -1,0 +1,31 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #202024;
+}
+
+h2, h3 {
+    color: #C4C4CC
+}
+
+h1 {
+    font-size: 100px;
+    color: #996DFF;
+}
+
+img {
+    height: 100px;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.box-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
