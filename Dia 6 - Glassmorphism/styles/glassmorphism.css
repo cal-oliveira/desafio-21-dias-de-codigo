@@ -1,0 +1,160 @@
+/* others */
+
+.example {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.auto-align {
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs-center {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 38%;
+}
+
+.centralized-container {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+ }
+
+/* GLASSMORPHISM */
+
+/* H1 --------------------------------------------------- */
+
+.h1-glass {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.h1-glass:hover {
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+}
+
+
+/* CARDS --------------------------------------------------- */
+
+.card-glass {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+.card-glass-hover:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+}
+
+.card-sm {
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+}
+
+.card-md {
+    width: 350px;
+    height: 350px;
+    margin: 5px;
+}
+
+.card-lg {
+    width: 400px;
+    height: 600px;
+    margin: 5px;
+}
+
+
+/* INPUTS --------------------------------------------------- */
+
+.input-glass {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #fff;
+    outline: 0;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+.input-glass-hover:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+}
+
+.input-sm {
+    width: 15%;
+    font-size: small;
+}
+
+.input-md {
+    width: 30%;
+    font-size: medium;
+}
+
+.input-lg {
+    width: 70%;
+    font-size: large;
+}
+
+
+/* BUTTONS --------------------------------------------------- */
+
+.button-glass {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    height: 40px;
+    width: 150px;
+    margin: 5px;
+}
+
+.button-glass:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: #202024;
+    transition: 0.3s;
+}
+
+.button-sm {
+    width: 10%;
+    height: 30px;
+    font-size: small;
+}
+
+.button-md {
+    width: 15%;
+    height: 40px;
+    font-size: medium;
+}
+
+.button-lg {
+    width: 30%;
+    height: 50px;
+    font-size: large;
+}
