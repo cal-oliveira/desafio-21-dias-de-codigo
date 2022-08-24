@@ -3,25 +3,27 @@ let playBtn = document.getElementById('playBtn')
 let pauseBtn = document.getElementById('pauseBtn')
 let stopBtn = document.getElementById('stopBtn')
 
-let hh = 00
-let mm = 00
-let ss = 00
+let seconds = 0
+let minuts = 0
 
-let cronometerValue = 0
-
-let clock
-
+let sec
+let min 
 
 playBtn.addEventListener('click',()=>{
 
-    if(cronometerValue === 0){
+    if(seconds === 0){
 
         playBtn.classList.add('btn-pressed-purple')
         
-        clock =  setInterval(()=>{
-            cronometerValue++
-            timer.innerHTML = cronometerValue
+        sec = setInterval(()=>{
+            seconds++
+            timer.innerHTML = (minuts < 10 ? '0' + minuts : minuts) + ':' + (seconds < 10 ? '0' + seconds : seconds < 60 ? seconds : seconds = 0)
         },1000)
+
+        min = setInterval(()=>{
+            minuts++
+            timer.innerHTML = (minuts < 10 ? '0' + minuts : minuts) + ':' + (seconds < 10 ? '0' + seconds : seconds < 60 ? seconds : seconds = 0)
+        },60000)
         
 
     } else {
@@ -30,10 +32,15 @@ playBtn.addEventListener('click',()=>{
             playBtn.classList.add('btn-pressed-purple')
             pauseBtn.classList.remove('btn-pressed-orange')
             
-            clock =  setInterval(()=>{
-                cronometerValue++
-                timer.innerHTML = cronometerValue
+            sec = setInterval(()=>{
+                seconds++
+                timer.innerHTML = (minuts < 10 ? '0' + minuts : minuts) + ':' + (seconds < 10 ? '0' + seconds : seconds < 60 ? seconds : seconds = 0)
             },1000)
+
+            min = setInterval(()=>{
+                minuts++
+                timer.innerHTML = (minuts < 10 ? '0' + minuts : minuts) + ':' + (seconds < 10 ? '0' + seconds : seconds < 60 ? seconds : seconds = 0)
+            },60000)
 
         } else {
             return
@@ -44,17 +51,25 @@ playBtn.addEventListener('click',()=>{
 })
 
 pauseBtn.addEventListener('click',()=>{
-    clearInterval(clock)
+
+    if(seconds === 0){
+        return
+    }
+
+    clearInterval(sec)
+    clearInterval(min)
     pauseBtn.classList.add('btn-pressed-orange')
     playBtn.classList.remove('btn-pressed-purple')
 })
 
 stopBtn.addEventListener('click',()=>{
 
-    clearInterval(clock)
+    clearInterval(sec)
+    clearInterval(min)
     playBtn.classList.remove('btn-pressed-purple')
     pauseBtn.classList.remove('btn-pressed-orange')
-    cronometerValue = 0
-    timer.innerHTML = 0
+    seconds = 0
+    minuts = 0
+    timer.innerHTML = '00:00'
 
 })
