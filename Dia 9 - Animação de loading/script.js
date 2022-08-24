@@ -1,0 +1,13 @@
+addEventListener('DOMContentLoaded',()=>{
+    setTimeout(()=>{document.querySelector('.loading-bar').style.width = '10%'},1000)
+    setTimeout(()=>{document.querySelector('.loading-bar').style.width = '30%'},2000)
+    setTimeout(()=>{document.querySelector('.loading-bar').style.width = '35%'},2500)
+    setTimeout(()=>{document.querySelector('.loading-bar').style.width = '40%'},3000)
+    setTimeout(()=>{document.querySelector('.loading-bar').style.width = '45%'},3500)
+    setTimeout(()=>{document.querySelector('.loading-bar').style.width = '50%'},4000)
+    setTimeout(()=>{document.querySelector('.loading-bar').style.width = '55%'},4500)
+    setTimeout(()=>{document.querySelector('.loading-bar').style.width = '59%'},5000)
+    setTimeout(()=>{document.querySelector('.loading-bar').style.width = '60%'},6000)
+    setTimeout(()=>{document.querySelector('.loading-bar').style.width = '100%'},6500)
+    setTimeout(()=>{document.getElementById('message').style.visibility = 'visible'},6900)
+})
