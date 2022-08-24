@@ -6,6 +6,9 @@ let stopBtn = document.getElementById('stopBtn')
 let seconds = 0
 let minuts = 0
 
+let intervalSecs = 1000
+let intervalMins = 60000
+
 let sec
 let min 
 
@@ -18,12 +21,12 @@ playBtn.addEventListener('click',()=>{
         sec = setInterval(()=>{
             seconds++
             timer.innerHTML = (minuts < 10 ? '0' + minuts : minuts) + ':' + (seconds < 10 ? '0' + seconds : seconds < 60 ? seconds : seconds = 0)
-        },1000)
+        },intervalSecs)
 
         min = setInterval(()=>{
             minuts++
             timer.innerHTML = (minuts < 10 ? '0' + minuts : minuts) + ':' + (seconds < 10 ? '0' + seconds : seconds < 60 ? seconds : seconds = 0)
-        },60000)
+        },intervalMins)
         
 
     } else {
