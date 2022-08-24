@@ -29,10 +29,6 @@ body {
     width: 650px;
 }
 
-.buttons {
-    margin: 10px;
-}
-
 .btn {
     height: 40px;
     width: 90px;
@@ -46,8 +42,22 @@ body {
     transition: 0.5s;
 }
 
-.btn:nth-child(1){
+.play {
     color: #996DFF;
+}
+
+.pause {
+    color: #FBA94C;
+}
+
+.btn-pressed-orange {
+    color: #202024;
+    background-color: #FBA94C;
+}
+
+.btn-pressed-purple {
+    color: #202024;
+    background-color: #996DFF;
 }
 
 .btn:nth-child(1):hover{
@@ -56,12 +66,14 @@ body {
     transition: 0.5s;
 }
 
-.btn:nth-child(2) {
-    color: #FBA94C;
-}
-
 .btn:nth-child(2):hover {
     background-color: #FBA94C;
+    color: #202024;
+    transition: 0.5s;
+}
+
+.btn:nth-child(3):hover{
+    background-color: #996DFF;
     color: #202024;
     transition: 0.5s;
 }
