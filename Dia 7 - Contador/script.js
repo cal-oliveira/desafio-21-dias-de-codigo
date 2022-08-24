@@ -9,6 +9,8 @@ let ss = 00
 
 let cronometerValue = 0
 
+let clock
+
 
 playBtn.addEventListener('click',()=>{
 
@@ -16,7 +18,7 @@ playBtn.addEventListener('click',()=>{
 
         playBtn.classList.add('btn-pressed-purple')
         
-        let clock =  setInterval(()=>{
+        clock =  setInterval(()=>{
             cronometerValue++
             timer.innerHTML = cronometerValue
         },1000)
@@ -28,7 +30,7 @@ playBtn.addEventListener('click',()=>{
             playBtn.classList.add('btn-pressed-purple')
             pauseBtn.classList.remove('btn-pressed-orange')
             
-            let clock =  setInterval(()=>{
+            clock =  setInterval(()=>{
                 cronometerValue++
                 timer.innerHTML = cronometerValue
             },1000)
