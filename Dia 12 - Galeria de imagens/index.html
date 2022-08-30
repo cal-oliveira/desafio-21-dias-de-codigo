@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Galeria</title>
+</head>
+<body>
+    
+   <div class="container">
+    <div onclick="back()" class="btn">
+        <img src="./assets/back.png" alt="">
+    </div>
+    <div>
+        <img id="1" class="selected gallery" src="./images/img1.jpg" alt="">
+    </div>
+    <div>
+        <img id="2" class="gallery" src="./images/img2.jpg" alt="">
+    </div>
+    <div>
+        <img id="3" class="gallery" src="./images/img3.jpg" alt="">
+    </div>
+    <div onclick="next()" class="btn"> 
+        <img src="./assets/next.png" alt="">
+    </div>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
