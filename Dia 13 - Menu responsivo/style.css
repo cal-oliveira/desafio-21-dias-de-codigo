@@ -39,6 +39,19 @@ body {
     width: 50vw;
 }
 
+.menu-min-700 {
+    visibility: hidden;
+    color: #fff;
+    display: flex;
+    position: absolute;
+    top: 33px;
+    right: 20%;
+}
+
+.footer-min-700 {
+    
+}
+
 .ul {
     margin-top: 80px;
 }
@@ -51,7 +64,8 @@ body {
 }
 
 .li:hover {
-    color: #7C7C8A;
+    color: #202024;
+    cursor: pointer;
 }
 
 footer {
@@ -79,4 +93,30 @@ a {
 
 a:hover {
     color: #7C7C8A
+}
+
+@media (min-width: 700px){
+    .logo {
+        position: fixed;
+        top: 10px;
+        left: 20%;
+    }
+    
+    .menu {
+        visibility: hidden;
+        position: fixed;
+        top: 35px;
+        right: 20%;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .menu-min-700 {
+        visibility: visible;
+        color: #fff;
+        display: flex;
+        position: absolute;
+        top: 33px;
+        right: 20%;
+    }
 }
