@@ -1,0 +1,52 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #29292E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coins {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.space {
+    width: 25px;
+}
+
+
+div[class='brl'],div[class='usd'] {
+    display: flex;
+    align-items: center;
+}
+
+
+h2 {
+    color: #C4C4CC;
+    font-size: 100px;
+}
+
+input[type='number'] {
+    background-color: #29292E;
+    color: #C4C4CC;
+    border: none;
+    outline: none;
+    height: 100px;
+    width: 270px;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+
+
+
+
+
