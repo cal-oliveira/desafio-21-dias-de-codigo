@@ -7,7 +7,6 @@ function newPass(){
 }
 
 function copy(){
-    console.log(pass)
     navigator.clipboard.writeText(pass)
 }
 
